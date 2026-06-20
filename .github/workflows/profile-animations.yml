@@ -30,12 +30,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  three-d-contrib:
-    runs-on: ubuntu-latest
-    steps:
-      - name: generate 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: muneeb10305896-rgb
