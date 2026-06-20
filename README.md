@@ -108,18 +108,6 @@
 
 ---
 
-### 🧊 3D Contribution Calendar
-
-> ⚙️ Renders after the one-time GitHub Action setup below (`profile-animations.yml`). Once it runs once, this turns your real commit history into an animated 3D isometric grid.
-
-<div align="center">
-
-![3D Contribution Graph](https://raw.githubusercontent.com/muneeb10305896-rgb/muneeb10305896-rgb/profile-3d-contrib/profile-night-rainbow.svg)
-
-</div>
-
----
-
 ### 🐍 Contribution Snake
 
 > ⚙️ Same one-time setup as above unlocks this — a snake that animates across and "eats" your contribution graph.
