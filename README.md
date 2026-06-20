@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Muneeb%20Ahmed%20Butt&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%26%20IT%20Manager%20%40%20NORDASH&descAlignY=55&descSize=20)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Muneeb%20Ahmed%20Butt&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%26amp%3B%20IT%20Manager%20%40%20NORDASH&descAlignY=55&descSize=20)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6AC1&center=true&vCenter=true&width=650&lines=Building+with+Next.js%2C+React+%26+Web3;Currently+learning+Finnish+%F0%9F%87%AB%F0%9F%87%AE;Always+shipping+something+new)](https://github.com/muneeb10305896-rgb)
 
