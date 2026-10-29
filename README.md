@@ -1,8 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Muneeb%20Ahmed%20Butt&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%26amp%3B%20IT%20Manager%20%40%20NORDASH&descAlignY=55&descSize=20)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Muneeb%20Ahmed%20Butt&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=IT%20Student%20%40%20UEF%20%C2%B7%20Full-Stack%20Developer%20%C2%B7%20Founder%20of%20NORDASH&descAlignY=55&descSize=20)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6AC1&center=true&vCenter=true&width=650&lines=Building+with+Next.js%2C+React+%26+Web3;Currently+learning+Finnish+%F0%9F%87%AB%F0%9F%87%AE;Always+shipping+something+new)](https://github.com/muneeb10305896-rgb)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6AC1&center=true&vCenter=true&width=650&lines=Founder+of+NORDASH+%C2%B7+Based+in+Helsinki;Building+with+Next.js%2C+React+%26+Three.js;Open+to+IT+%26+data+traineeships+in+Finland;Currently+learning+Finnish+%F0%9F%87%AB%F0%9F%87%AE)](https://github.com/muneeb10305896-rgb)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=muneeb10305896-rgb&style=for-the-badge&color=ff6ac1&label=PROFILE+VIEWS)
 
@@ -12,12 +12,13 @@
 
 ### 👋 About Me
 
-- 🛰️ **Currently working on:** [NORDASH](https://nordash.vercel.app) — my full-stack digital agency (Next.js, Tailwind CSS, Framer Motion) — and **BubbaCoin**, an ERC-20 token deployed on the Ethereum Sepolia testnet
+- 🛰️ **Currently working on:** [NORDASH](https://nordash.vercel.app) — the full-stack digital agency I founded in June 2026 (Next.js, Tailwind CSS, Framer Motion, Three.js)
+- 🎯 **Looking for:** an IT or data traineeship in Finland
 - 👥 **Looking to collaborate on:** full-stack web projects (React/Next.js + Firebase) and Web3/smart contract experiments
-- 🤝 **Looking for help with:** breaking into the Finnish/Nordic tech job market
-- 🌱 **Currently learning:** Finnish (A2 level) and cyber risk management, alongside my IT degree at the University of Eastern Finland
-- 💬 **Ask me about:** Next.js, Firebase, smart contracts, or building portfolio sites that actually load fast
-- 📍 **Based in:** Kuopio, Finland
+- 🌱 **Currently learning:** Finnish (A2 level) and cyber risk management, alongside my B.Sc. in IT at the University of Eastern Finland
+- 💬 **Ask me about:** Next.js, Firebase, Three.js, smart contracts, or building portfolio sites that actually load fast
+- 🙌 **Outside code:** Slush 2026 volunteer · ESN Savo · Aspire Leaders Program 2024
+- 📍 **Based in:** Helsinki, Finland
 
 ---
 
@@ -26,6 +27,7 @@
 **Languages**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
@@ -36,11 +38,13 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
 
 **Backend, Cloud & Hosting**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 **Web3**
@@ -61,6 +65,7 @@
 - ✅ [HackerRank — Python (Basic)](https://www.hackerrank.com/certificates/d68eb9c153f7)
 - ✅ [HackerRank — JavaScript (Basic)](https://www.hackerrank.com/certificates/1b27c5657457)
 - ✅ [IBM — AI Literacy](https://www.credly.com/badges/74002bea-b6a5-494c-9036-aa3c2827f133)
+- ✅ [Aspire Leaders Program 2024 — Aspire Institute](https://muneeb-ahmed-butt.vercel.app/assets/Aspire_Leaders_2024_Certificate.pdf)
 
 ---
 
@@ -68,9 +73,10 @@
 
 | Project | Description | Stack |
 |---|---|---|
-| 🌐 [**NORDASH**](https://nordash.vercel.app) | Full-stack digital agency — built end-to-end as Full-Stack Developer & IT Manager | Next.js · Tailwind · Framer Motion |
+| 🌐 [**NORDASH**](https://nordash.vercel.app) | Full-stack digital agency I founded — designed and built end-to-end | Next.js · Tailwind · Framer Motion · Three.js |
 | 🪙 [**BubbaCoin**](https://github.com/muneeb10305896-rgb/BubbaCoin) | ERC-20 token deployed live on Ethereum Sepolia testnet | Solidity |
-| 📚 [**StudySync**](https://github.com/muneeb10305896-rgb/studysync) | Collaborative study app built with a university team | React · Firebase |
+| 📚 [**StudySync**](https://github.com/muneeb10305896-rgb/studysync) | Study-partner app (UEF team of 7) — frontend lead, built all 7 pages incl. real-time chat | React · Firebase |
+| 💼 [**Portfolio**](https://muneeb-ahmed-butt.vercel.app) | Hand-coded portfolio with EN/FI, light/dark themes and a physics lanyard card | HTML · CSS · JavaScript |
 
 > BubbaCoin contract: `0x5917bF690cc17E33322257Cd7079fD427b42679a`
 
@@ -110,7 +116,7 @@
 
 ### 🐍 Contribution Snake
 
-> ⚙️ Same one-time setup as above unlocks this — a snake that animates across and "eats" your contribution graph.
+> ⚙️ Regenerated daily by the `profile-animations` GitHub Action.
 
 <div align="center">
 
@@ -128,7 +134,7 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muneeb-ahmed-butt-4a384438a)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muneebahmedbutt)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muneeb10305896-rgb)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF6AC1?style=for-the-badge&logo=vercel&logoColor=white)](https://muneeb-ahmed-butt.vercel.app)
 
