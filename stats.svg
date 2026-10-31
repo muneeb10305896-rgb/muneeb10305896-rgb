@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="Muneeb Ahmed Butt's GitHub stats">
+<style>
+  .t { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #fe428e; }
+  .l { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #a9fef7; }
+  .v { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #a9fef7; }
+  .s { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #7c7a93; }
+  .big { font: 800 26px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #fe428e; }
+  .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; } }
+</style>
+<rect width="495" height="195" rx="6" fill="#141321"/>
+<text class="t" x="25" y="35">Muneeb's GitHub Stats</text>
+<g class="fade" style="animation-delay:150ms"><path transform="translate(25,50)" d="M8 .25l2.35 4.76 5.26.77-3.8 3.7.9 5.24L8 12.25l-4.71 2.47.9-5.24-3.8-3.7 5.26-.77z" fill="#f8d847" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="l" x="50" y="62">Total Stars:</text><text class="v" x="230" y="62">0</text></g>
+<g class="fade" style="animation-delay:270ms"><path transform="translate(25,75)" d="M8 4.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM0 8h4.5M11.5 8H16" fill="none" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="l" x="50" y="87">Commits (last year):</text><text class="v" x="230" y="87">25</text></g>
+<g class="fade" style="animation-delay:390ms"><path transform="translate(25,100)" d="M4 3a1.5 1.5 0 110 .01M4 4.5v7M4 13a1.5 1.5 0 110 .01M12 13a1.5 1.5 0 110 .01M12 11.5V6a2 2 0 00-2-2H7" fill="none" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="l" x="50" y="112">Pull Requests:</text><text class="v" x="230" y="112">2</text></g>
+<g class="fade" style="animation-delay:510ms"><path transform="translate(25,125)" d="M8 1a7 7 0 110 14A7 7 0 018 1zM8 4.5v4M8 11v.5" fill="none" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="l" x="50" y="137">Issues:</text><text class="v" x="230" y="137">0</text></g>
+<g class="fade" style="animation-delay:630ms"><path transform="translate(25,150)" d="M3 1.5h9.5v11H4a1.5 1.5 0 00-1.5 1.5V2.5a1 1 0 011-1zM2.5 14A1.5 1.5 0 004 15.5h8.5" fill="none" stroke="#f8d847" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="l" x="50" y="162">Public Repositories:</text><text class="v" x="230" y="162">7</text></g>
+<g class="fade" style="animation-delay:300ms">
+  <circle cx="400" cy="105" r="46" fill="none" stroke="#2a2840" stroke-width="6"/>
+  <circle cx="400" cy="105" r="46" fill="none" stroke="#fe428e" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="289.0" stroke-dashoffset="72.3" transform="rotate(-90 400 105)"/>
+  <text class="big" x="400" y="114" text-anchor="middle">35</text>
+  <text class="s" x="400" y="173" text-anchor="middle">contributions in the last year</text>
+</g>
+</svg>
