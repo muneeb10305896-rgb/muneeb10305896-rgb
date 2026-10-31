@@ -86,9 +86,9 @@
 
 <div align="center">
 
-![Muneeb's GitHub Stats](https://github-readme-stats.vercel.app/api?username=muneeb10305896-rgb&show_icons=true&theme=radical&hide_border=true&count_private=true)
+![Muneeb's GitHub Stats](https://raw.githubusercontent.com/muneeb10305896-rgb/muneeb10305896-rgb/output/stats.svg)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=muneeb10305896-rgb&layout=compact&theme=radical&hide_border=true)
+![Top Languages](https://raw.githubusercontent.com/muneeb10305896-rgb/muneeb10305896-rgb/output/top-langs.svg)
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=muneeb10305896-rgb&theme=radical&hide_border=true)
 
@@ -98,17 +98,7 @@
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=muneeb10305896-rgb&theme=react-dark&hide_border=true&area=true)
-
-</div>
-
----
-
-### 🏆 Trophies
-
-<div align="center">
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=muneeb10305896-rgb&theme=radical&no-frame=true&row=1&column=6&margin-w=8)
+![Activity Graph](https://raw.githubusercontent.com/muneeb10305896-rgb/muneeb10305896-rgb/output/activity.svg)
 
 </div>
 
@@ -116,7 +106,7 @@
 
 ### 🐍 Contribution Snake
 
-> ⚙️ Regenerated daily by the `profile-animations` GitHub Action.
+> ⚙️ The snake, stats, languages and activity graph are regenerated daily by the `profile-animations` GitHub Action.
 
 <div align="center">
 
