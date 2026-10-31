@@ -1,7 +1,7 @@
 // Generates the profile README cards as static SVGs (no third-party card services):
 //   stats.svg      – stars, commits, PRs, issues, repos + yearly contributions
 //   top-langs.svg  – language share across your own public, non-fork repos
-//   activity.svg   – daily contributions over the last 31 days
+//   activity.svg   – weekly contributions over the last 12 months
 // Runs in the profile-animations workflow with the built-in GITHUB_TOKEN.
 // Local preview with sample data:  node .github/scripts/profile-cards.mjs --mock out-dir
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -79,7 +79,7 @@ function mockData() {
   const today = new Date();
   for (let i = 364; i >= 0; i--) {
     const d = new Date(today); d.setDate(d.getDate() - i);
-    days.push({ date: d.toISOString().slice(0, 10), contributionCount: i < 40 ? [0, 0, 1, 3, 0, 2, 5, 0, 1][i % 9] : 0 });
+    days.push({ date: d.toISOString().slice(0, 10), contributionCount: (i > 130 && i < 175) ? [0, 0, 1, 3, 0, 2, 5, 0, 1][i % 9] : 0 });
   }
   return {
     name: 'Muneeb Ahmed Butt', stars: 3, commits: 31, prs: 2, issues: 1, repos: 6, followers: 4, yearTotal: 35,
@@ -137,7 +137,7 @@ ${body}
   <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${T.title}" stroke-width="6" stroke-linecap="round"
           stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${(C * 0.25).toFixed(1)}" transform="rotate(-90 ${cx} ${cy})"/>
   <text class="big" x="${cx}" y="${cy + 9}" text-anchor="middle">${fmt(d.yearTotal)}</text>
-  <text class="s" x="${cx}" y="${cy + r + 22}" text-anchor="middle">contributions this year</text>
+  <text class="s" x="${cx}" y="${cy + r + 22}" text-anchor="middle">contributions in the last year</text>
 </g>
 </svg>
 `;
@@ -168,38 +168,52 @@ ${legend}
 }
 
 function activityCard(d) {
-  const days = d.days.slice(-31);
+  /* weekly totals over the last 12 months: a 31-day window is often empty
+     for a student account, which renders as a flat line at zero */
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const daily = d.days.slice(-364);
+  const weeks = [];
+  for (let i = 0; i < daily.length; i += 7) {
+    const chunk = daily.slice(i, i + 7);
+    weeks.push({ date: chunk[0].date, count: chunk.reduce((a, x) => a + x.contributionCount, 0) });
+  }
   const W = 900, H = 300, L = 55, R = 25, Tp = 60, B = 50;
   const pw = W - L - R, ph = H - Tp - B;
-  const max = Math.max(4, ...days.map(x => x.contributionCount));
+  const max = Math.max(4, ...weeks.map(w => w.count));
   const yMax = Math.ceil(max / 4) * 4;
-  const px = i => L + (days.length > 1 ? (i / (days.length - 1)) * pw : 0);
+  const px = i => L + (weeks.length > 1 ? (i / (weeks.length - 1)) * pw : 0);
   const py = v => Tp + ph - (v / yMax) * ph;
-  const pts = days.map((x, i) => [px(i), py(x.contributionCount)]);
+  const pts = weeks.map((w, i) => [px(i), py(w.count)]);
   const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
-  const area = `${line} L${px(days.length - 1).toFixed(1)},${Tp + ph} L${L},${Tp + ph} Z`;
+  const area = `${line} L${px(weeks.length - 1).toFixed(1)},${Tp + ph} L${L},${Tp + ph} Z`;
   const grid = [0, 1, 2, 3, 4].map(k => {
     const v = (yMax / 4) * k, y = py(v);
     return `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" stroke="${T.grid}" stroke-dasharray="${k ? '3 4' : ''}"/>
 <text class="s" x="${L - 10}" y="${y + 4}" text-anchor="end">${v}</text>`;
   }).join('\n');
-  const xLabels = days.map((x, i) => (i % 3 === 0 || i === days.length - 1)
-    ? `<text class="s" x="${px(i)}" y="${H - B + 22}" text-anchor="middle">${Number(x.date.slice(8))}</text>` : '').join('');
-  const dots = pts.map(p => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="${T.bg}" stroke="${T.text}" stroke-width="1.5"/>`).join('');
-  const total = days.reduce((a, x) => a + x.contributionCount, 0);
-  const from = days[0]?.date || '', to = days[days.length - 1]?.date || '';
-  return `${svgOpen(W, H, 'Contribution activity, last 31 days')}
+  /* month label at the first week that starts in a new month */
+  let prevM = -1;
+  const xLabels = weeks.map((w, i) => {
+    const m = Number(w.date.slice(5, 7)) - 1;
+    if (m === prevM) return '';
+    prevM = m;
+    return i === 0 ? '' : `<text class="s" x="${px(i)}" y="${H - B + 22}" text-anchor="middle">${MONTHS[m]}</text>`;
+  }).join('');
+  const dots = pts.map((p, i) => weeks[i].count
+    ? `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="${T.bg}" stroke="${T.text}" stroke-width="1.5"/>` : '').join('');
+  const total = weeks.reduce((a, w) => a + w.count, 0);
+  return `${svgOpen(W, H, 'Contribution activity, last 12 months')}
 <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
   <stop offset="0" stop-color="${T.title}" stop-opacity=".45"/><stop offset="1" stop-color="${T.title}" stop-opacity="0"/>
 </linearGradient></defs>
 <text class="t" x="25" y="35">${esc(d.name.split(' ')[0])}'s Contribution Graph</text>
-<text class="s" x="${W - 25}" y="35" text-anchor="end">${total} contributions · ${from} – ${to}</text>
+<text class="s" x="${W - 25}" y="35" text-anchor="end">${total} contributions · weekly, last 12 months</text>
 ${grid}
 <path d="${area}" fill="url(#fill)" class="fade"/>
 <path d="${line}" fill="none" stroke="${T.title}" stroke-width="2.5" stroke-linejoin="round" class="fade"/>
 <g class="fade" style="animation-delay:250ms">${dots}</g>
 ${xLabels}
-<text class="s" x="${L + pw / 2}" y="${H - 8}" text-anchor="middle">Days</text>
+<text class="s" x="${L + pw / 2}" y="${H - 8}" text-anchor="middle">Weeks</text>
 </svg>
 `;
 }
